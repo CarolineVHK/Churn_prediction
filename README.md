@@ -15,7 +15,7 @@ Label encoding was employed to transform string values into integers, a necessar
 
 # 🔧 Installation
 
-To utilize the model with the existing data, no installation is required. Simply access StreamLite via: [StreamLite Link].
+To utilize the model with the existing data, no installation is required. Simply access StreamLite via: [StreamLite Link](https://carolinevhk-churn-prediction-app-qz0a13.streamlit.app/).
 
 For implementation with custom data, clone the repository and follow the instructions detailed in the `requirements.txt` file.
 
