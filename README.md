@@ -4,7 +4,7 @@
 
 An important financial institution is interested in analyzing its client database to increase revenue generated from credit cardholders while reducing churn rates. With a churn rate exceeding 15% and showing an upward trend, the CEO has tasked the marketing team with initiating a campaign for client retention.
 
-The dataset, named `BankChurners.csv`, was provided by the client. During preprocessing (refer to **Preprocessing Data**), three columns were dropped per client advice, including the last two columns and the client number column, as they were deemed irrelevant for data processing. To ensure data cleanliness, 'Unknown' values were handled differently based on the modeling approach.
+The dataset, named `BankChurners.csv`, was provided by the client (Kaggle). During preprocessing (refer to **Preprocessing Data**), three columns were dropped per client advice, including the last two columns and the client number column, as they were deemed irrelevant for data processing. To ensure data cleanliness, 'Unknown' values were handled differently based on the modeling approach.
 
 Label encoding was employed to transform string values into integers, a necessary step for model training.
 
