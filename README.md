@@ -23,7 +23,6 @@ For implementation with custom data, clone the repository and follow the instruc
 
 ```
 .
-├── venv
 ├── data
 │ ├── BankChurners.csv
 │ ├── exploration_data.ipynb
@@ -36,12 +35,14 @@ For implementation with custom data, clone the repository and follow the instruc
 │ ├── ideas.py
 │ ├── test_models.py
 │ ├── test_prediction.py
+├── venv
 ├── .gitignore
 ├── app.py
 ├── best_model_Gradient Boosting.pkl
 ├── classification.py
 ├── Dockerfile
 ├── README.md
+├── requirements.txt
 
 ```
 
