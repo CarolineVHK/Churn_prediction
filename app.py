@@ -32,7 +32,7 @@ def main():
     Total_Trans_Amt = st.number_input('Total_Trans_Amt',min_value=0)
     Total_Trans_Ct = st.number_input('Total_Trans_Ct',min_value=0)
     Total_Ct_Chng_Q4_Q1 = st.number_input('Total_Ct_Chng_Q4_Q1',max_value=2, format="%0.2f")
-    Avg_Utilization_Ratio = st.number_input('Avg_Utilization_Ratio', min_value=0, max_value=1)
+    Avg_Utilization_Ratio = st.number_input('Avg_Utilization_Ratio', min_value=0, max_value=1, format="%0.3f")
     
 
     # When 'Predict' button is clicked
