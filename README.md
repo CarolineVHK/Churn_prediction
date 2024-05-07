@@ -1,5 +1,10 @@
 # Churn_prediction
 
+[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue)](https://www.python.org/)
+[![Powered by Streamlit](https://img.shields.io/badge/Powered%20by-Streamlit-red)](https://streamlit.io/)
+[![Dockerized](https://img.shields.io/badge/Dockerized-green)](https://www.docker.com/)
+
+
 # 📝 Description
 
 An important financial institution is interested in analyzing its client database to increase revenue generated from credit cardholders while reducing churn rates. With a churn rate exceeding 15% and showing an upward trend, the CEO has tasked the marketing team with initiating a campaign for client retention.
