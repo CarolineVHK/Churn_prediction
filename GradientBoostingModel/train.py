@@ -37,15 +37,6 @@ class PreprocessingData:
         self.data.drop(columns=columns_to_drop, inplace=True)
         return self.data
         
-        
-    def handle_unknown(self):
-        '''
-        How do we handle data with 'Unknown' as a value?
-        Here I decided to ignore it for 
-        '''
-
-        pass
-        
     def handle_categorical_values(self):
         '''
         Machine Learning models can't handle categorical values, so we need to encode then 
@@ -108,12 +99,6 @@ results = {}
 for name_model, model in models.items():
     accuracy, precision, recall, f1, roc_auc = evaluate_models(model, X_train, X_test, y_train, y_test)
     results[name_model] = {'accuracy':accuracy, 'precision': precision, 'recall': recall,'f1':f1, 'ROC_AUC score': roc_auc}
-
-# for name, scores in results.items():
-#     print(f"Model: {name}")
-#     for type,score in scores.items():
-#         print(f"{type} : {score}")
-#     print()
 
 best_model_name = max(results, key=lambda X:results[X]['ROC_AUC score'])
 print (f"The best model is: {best_model_name}")

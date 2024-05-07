@@ -1,7 +1,6 @@
 import pickle
 import pandas as pd
 
-from GradientBoostingModel.train import Preprocessor
 
 data = pd.read_csv('./data/BankChurners.csv')
 data_copy = data.copy()

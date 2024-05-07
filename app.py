@@ -3,7 +3,7 @@ import pandas as pd
 import joblib 
 from GradientBoostingModel.train import PreprocessingData
 
-trained_model = joblib.load('./GradientBoostingModel/best_model_Gradient Boosting.pkl')
+trained_model = joblib.load('best_model_Gradient Boosting.pkl')
 
 #defining streamlit app
 def main():

@@ -15,6 +15,9 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.svm import SVC
 from sklearn.naive_bayes import GaussianNB
 
+#import making pickel-file for model
+import joblib
+
 #load data and preprocessing
 data = pd.read_csv('/Users/caro/Documents/Projects/Churn_prediction/data/BankChurners.csv')
 
@@ -99,17 +102,15 @@ svc_model = SVC(random_state=42)                                    #Support Vec
 
 #evaluation models
 models = {'Random Forest':rf_model, 'KNN Model': knn_model, 'Logistric Regression': lr_model, 
-          'Decision Tree': dt_model, 'Gradient Boosting':gmb_model, 'Neural Network':nn_model, 
+          'Decision Tree': dt_model, 'GradientBoosting':gmb_model, 'Neural Network':nn_model, 
           'Naive Bayes':naiv_model, 'Support Vector Classifier': svc_model}
 results = {}
 for name_model, model in models.items():
     accuracy, precision, recall, f1, roc_auc = evaluate_models(model, X_train, X_test, y_train, y_test)
     results[name_model] = {'accuracy':accuracy, 'precision': precision, 'recall': recall,'f1':f1, 'ROC_AUC score': roc_auc}
 
-for name, scores in results.items():
-    print(f"Model: {name}")
-    for type,score in scores.items():
-        print(f"{type} : {score}")
-    print()
+best_model_name = max(results, key=lambda X:results[X]['ROC_AUC score'])
+print (f"The best model is: {best_model_name}")
 
-   
+#save best model:
+joblib.dump(models[best_model_name], f'best_model_{best_model_name}.pkl') 
