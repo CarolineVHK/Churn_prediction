@@ -16,14 +16,29 @@ For implementation with custom data, clone the repository and follow the instruc
 
 # 📂 Repo Structure
 
-- venv
-- data
-  - BankChurners.csv
-  - exploration_data.ipynb
-- model1
-  - prediction.py
-  - train.py
-- README.md
+```
+.
+├── venv
+├── data
+│ ├── BankChurners.csv
+│ ├── exploration_data.ipynb
+│ ├──  pairplot.png
+├── GradientBoostingModel
+│ ├── prediction.py
+│ ├── train.py
+├── testing_models
+│ ├── Churner_smoted.csv
+│ ├── ideas.py
+│ ├── test_models.py
+│ ├── test_prediction.py
+├── .gitignore
+├── app.py
+├── best_model_Gradient Boosting.pkl
+├── classification.py
+├── Dockerfile
+├── README.md
+
+```
 
 # 🚀 Usage
 
