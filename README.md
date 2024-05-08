@@ -26,10 +26,13 @@ For implementation with custom data, clone the repository and follow the instruc
 ├── data
 │ ├── BankChurners.csv
 │ ├── exploration_data.ipynb
-│ ├──  pairplot.png
 ├── GradientBoostingModel
 │ ├── prediction.py
 │ ├── train.py
+├── images
+│ ├── Importance_gbmodel.png
+│ ├──  pairplot.png
+│ ├──ROC_curve.png
 ├── testing_models
 │ ├── Churner_smoted.csv
 │ ├── ideas.py
@@ -41,11 +44,9 @@ For implementation with custom data, clone the repository and follow the instruc
 ├── best_model_Gradient Boosting.pkl
 ├── classification.py
 ├── Dockerfile
-├── Feature vs permutation importance_gbmodel.png
 ├── Gradient_Boosting_model.pkl
 ├── README.md
 ├── requirements.txt
-├── ROC-curve for different models.png
 
 ```
 
@@ -74,12 +75,14 @@ The data utilized in this project is sourced from Kaggle's [Credit Card Customer
 
 ### ROC-curve
 
-![ROC Curve](ROC-curve for different models.png)
+![ROC Curve](images/ROC_curve.png)
 
 ## Feature vs Premutation Importance
 This highlights the features that have the most significant impact on the model's performance.
 
-![Permutation Importance](Feature vs permutation importance_gbmodel.png)
+![Permutation Importance](images/Importance_gbmodel.png)
+
+what about this?
 
 ## Confusion Matrix
 Visual the performance of the model in terms of true positives, false positives, true negatives, and false negatives.
