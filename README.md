@@ -41,6 +41,8 @@ For implementation with custom data, clone the repository and follow the instruc
 ├── best_model_Gradient Boosting.pkl
 ├── classification.py
 ├── Dockerfile
+├── Feature vs permutation importance_gbmodel.png
+├── Gradient_Boosting_model.pkl
 ├── README.md
 ├── requirements.txt
 
@@ -56,7 +58,32 @@ The data utilized in this project is sourced from Kaggle's [Credit Card Customer
 
 # 🖼️ Visuals
 
-(Include any visuals here)
+## Model Evaluation
+
+| Model                    | Accuracy | Precision | Recall | F1 Score | ROC-AUC Score |
+|--------------------------|----------|-----------|--------|----------|---------------|
+| Random Forest            | 0.9779   | 0.9849    | 0.9702 | 0.9775   | 0.9778        |
+| KNN Model                | 0.9012   | 0.9420    | 0.8520 | 0.8947   | 0.9005        |
+| Logistic Regression      | 0.8285   | 0.8132    | 0.8467 | 0.8296   | 0.8288        |
+| Decision Tree            | 0.9491   | 0.9530    | 0.9433 | 0.9481   | 0.9490        |
+| Gradient Boosting        | 0.9832   | 0.9885    | 0.9773 | 0.9829   | 0.9832        |
+| Neural Network           | 0.8153   | 0.7617    | 0.9099 | 0.8293   | 0.8166        |
+| Naive Bayes              | 0.8235   | 0.8367    | 0.7977 | 0.8167   | 0.8232        |
+| Support Vector Classifier| 0.7335   | 0.7331    | 0.7226 | 0.7278   | 0.7334        |
+
+### ROC-curve
+
+
+## Feature vs Premutation Importance
+This highlights the features that have the most significant impact on the model's performance.
+
+![Permutation Importance](Feature vs permutation importance_gbmodel.png)
+
+## Confusion Matrix
+Visual the performance of the model in terms of true positives, false positives, true negatives, and false negatives.
+
+![Confusion Matrix](path/to/confusion_matrix.png)
+
 
 # 👥 Contributors
 
