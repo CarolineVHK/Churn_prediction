@@ -5,10 +5,10 @@ from train import PreprocessingData
 print("one moment, the prediction is beiing calculated...")
 
 #loading model:
-gmb_model = joblib.load('best_model_Gradient Boosting.pkl')
+gmb_model = joblib.load('/Churn_prediction/Gradient_Boosting_model.pkl')
 
 #loading data using for prediction.
-data_to_predict = pd.read_csv('/Users/caro/Documents/Projects/Churn_prediction/data/BankChurners.csv')
+data_to_predict = pd.read_csv('/data/BankChurners.csv')
 
 #preprocessing data:
 prep_data = PreprocessingData(data_to_predict)

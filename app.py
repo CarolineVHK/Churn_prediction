@@ -28,11 +28,11 @@ def main():
     Credit_Limit = st.number_input('What is the credit limit?',min_value=0)
     Total_Revolving_Bal = st.number_input('total balans on credit card',min_value=0)
     Avg_Open_To_Buy = st.number_input('AVG open to buy value',min_value=0)
-    Total_Amt_Chng_Q4_Q1 = st.number_input('Total_Amt_Chng_Q4_Q1', format="%0.3f")
-    Total_Trans_Amt = st.number_input('Total_Trans_Amt',min_value=0)
-    Total_Trans_Ct = st.number_input('Total_Trans_Ct',min_value=0)
-    Total_Ct_Chng_Q4_Q1 = st.number_input('Total_Ct_Chng_Q4_Q1',min_value=0, max_value=2, format="%0.2f")
-    Avg_Utilization_Ratio = st.number_input('Avg_Utilization_Ratio', min_value=0, max_value=1, format="%0.3f")
+    Total_Amt_Chng_Q4_Q1 = st.number_input('Total Amt Chng Q4 Q1', format="%0.3f")
+    Total_Trans_Amt = st.number_input('Total Trans Amt',min_value=0)
+    Total_Trans_Ct = st.number_input('Total Trans Ct',min_value=0)
+    Total_Ct_Chng_Q4_Q1 = st.number_input('Total Ct Chng Q4 Q1',min_value=0, max_value=2, format="%0.2f")
+    Avg_Utilization_Ratio = st.number_input('Avg Utilization Ratio', min_value=0, max_value=1, format="%0.3f")
     
 
     # When 'Predict' button is clicked

@@ -69,40 +69,9 @@ X_smote, y_smote = smote.fit_resample(X,y)
 
 X_train, X_test, y_train, y_test= train_test_split(X_smote, y_smote, test_size=0.2, random_state=42)
 
-
-#i want to compaire different models to each other, so i create a function to evaluate the performance of each model
-def evaluate_models(model, X_train, X_test, y_train, y_test):
-    model.fit(X_train, y_train)
-    y_pred = model.predict(X_test)
-    accuracy = accuracy_score(y_test, y_pred)
-    precision = precision_score(y_test, y_pred)
-    recall = recall_score(y_test, y_pred)
-    f1 = f1_score(y_test, y_pred)
-    roc_auc = roc_auc_score(y_test, y_pred)
-    return accuracy , precision, recall, f1, roc_auc
-
-#models I want to test
-rf_model = RandomForestClassifier(random_state=42)                  #RandomForest model
-knn_model = KNeighborsClassifier(n_neighbors=5)                     #LogisticRegression model
-lr_model = LogisticRegression(random_state=42, max_iter=1000)       #LogisticRegression model
-dt_model = DecisionTreeClassifier(random_state=42)                  #DecisionTree model
+#define model
 gmb_model = XGBClassifier(random_state=42)                          #Gradient Boosting ML model
-nn_model = MLPClassifier(random_state=42)                           #Neural Network ML model
-naiv_model = GaussianNB()                                           #Naive Bayes model
-svc_model = SVC(random_state=42)                                    #Support Vector Classifier model
 
-#evaluation models
-models = {'Random Forest':rf_model, 'KNN Model': knn_model, 'Logistric Regression': lr_model, 
-          'Decision Tree': dt_model, 'Gradient Boosting':gmb_model, 'Neural Network':nn_model, 
-          'Naive Bayes':naiv_model, 'Support Vector Classifier': svc_model}
-results = {}
-for name_model, model in models.items():
-    accuracy, precision, recall, f1, roc_auc = evaluate_models(model, X_train, X_test, y_train, y_test)
-    results[name_model] = {'accuracy':accuracy, 'precision': precision, 'recall': recall,'f1':f1, 'ROC_AUC score': roc_auc}
-
-best_model_name = max(results, key=lambda X:results[X]['ROC_AUC score'])
-print (f"The best model is: {best_model_name}")
-
-#save best model:
-joblib.dump(models[best_model_name], f'best_model_{best_model_name}.pkl')
+#save model:
+joblib.dump(gmb_model,'Gradient_Boosting_model.pkl')
 
