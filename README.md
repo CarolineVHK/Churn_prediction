@@ -77,6 +77,8 @@ The data utilized in this project is sourced from Kaggle's [Credit Card Customer
 
 ![ROC Curve](images/ROC_curve.png)
 
+I selected the Gradient Boosting ML model due to its strong performance, particularly in achieving near-optimal ROC scores and consistently high scores across other tested metrics.
+
 ## Feature vs Permutation Importance
 This highlights the features that have the most significant impact on the model's performance.
 
