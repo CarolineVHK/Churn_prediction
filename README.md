@@ -45,6 +45,7 @@ For implementation with custom data, clone the repository and follow the instruc
 ├── Gradient_Boosting_model.pkl
 ├── README.md
 ├── requirements.txt
+├── ROC-curve for different models.png
 
 ```
 
@@ -73,6 +74,7 @@ The data utilized in this project is sourced from Kaggle's [Credit Card Customer
 
 ### ROC-curve
 
+![ROC Curve](ROC-curve for different models.png)
 
 ## Feature vs Premutation Importance
 This highlights the features that have the most significant impact on the model's performance.
