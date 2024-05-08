@@ -19,7 +19,7 @@ from sklearn.naive_bayes import GaussianNB
 import joblib
 
 #load data and preprocessing
-data = pd.read_csv('../data/BankChurners.csv')
+data = pd.read_csv('./data/BankChurners.csv')
 
 
 #preprocessing the data
