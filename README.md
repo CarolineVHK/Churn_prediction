@@ -124,4 +124,4 @@ This project was completed within a timeframe of 5 working days.
 
 # 📌 Personal Note
 
-(Add any personal notes or acknowledgments here)
+It was an enjoyable project, exploring various models to find the best fit for the use case. Now, I aim to refine the model further based on the insights gained. If you have any suggestions or notice areas for improvement, I'm open to discussion.
