@@ -77,17 +77,39 @@ The data utilized in this project is sourced from Kaggle's [Credit Card Customer
 
 ![ROC Curve](images/ROC_curve.png)
 
-## Feature vs Premutation Importance
+## Feature vs Permutation Importance
 This highlights the features that have the most significant impact on the model's performance.
 
 ![Permutation Importance](images/Importance_gbmodel.png)
 
-what about this?
+### What about this graphic? 
+You can observe the most influential features for predicting whether a client churns or not. In both scenarios, the top five significant features are: Total_Trans_Ct, Total_Relationship_Count, Total_Revolving_Bal, Gender, and Total_Trans_Amt. These features exhibit high similarity in their Permutation Importance rankings. However, given that we employ a Gradient Boosting ML model, the Feature Importance is predominantly derived from this model. Consequently, we place greater reliance on its assessment of feature importance.
 
-## Confusion Matrix
-Visual the performance of the model in terms of true positives, false positives, true negatives, and false negatives.
+# 🏁 Final conclusion
 
-![Confusion Matrix](path/to/confusion_matrix.png)
+In conclusion, the most critical features for predicting churn in clients are:
+
+- **Total_Trans_Ct:** Count of transactions for the last 12 months.
+- **Total_Relationship_Count:** Number of products the customer has.
+- **Total_Revolving_Bal:** Total balance on the credit card.
+- **Gender**
+- **Total_Trans_Amt:** Amount of transactions for the last 12 months.
+
+Understanding the significance of these features provides valuable insights for the client.
+
+### Recommendations for the Client:
+
+1. **Enhance Customer Engagement:** Increase interaction with customers to boost transaction counts and contacts. Implement personalized communication and targeted marketing campaigns to foster stronger relationships.
+
+2. **Diversify Product Offerings:** Encourage customers to diversify their product portfolio to increase the number of products they hold. Provide incentives or rewards for adopting additional products or services offered by the institution.
+
+3. **Manage Credit Card Balances:** Educate customers on responsible credit card usage to reduce revolving balances and improve financial stability. Offer guidance on budgeting and encourage timely repayment to minimize revolving balances.
+
+4. **Promote Financial Health:** Offer credit management tools and resources to help customers monitor and improve their financial health. Provide insights on credit utilization and recommend strategies to optimize credit limits and balances.
+
+5. **Optimize Transactional Behavior:** Analyze transactional patterns and identify opportunities to enhance transaction amounts and counts. Offer rewards or incentives for increasing transaction frequency or volume.
+
+By focusing on these areas, the client can proactively address factors contributing to churn and implement strategies to strengthen customer loyalty and satisfaction. Continuous monitoring and analysis of these parameters can provide valuable feedback for refining retention strategies and optimizing customer experiences in the long term.
 
 
 # 👥 Contributors
